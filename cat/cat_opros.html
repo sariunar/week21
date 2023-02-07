@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+</head>
+<body>
+    <form id="formElem">
+        <fieldset>
+            <legend>Имя</legend>
+            <div>
+                <label for="nickname_cat">Кличка питомца:</label>
+                <input type="text" name="nickname_cat" id="nickname_cat" required>*
+            </div><br>
+            <div>
+                <label for="name">Имя владельца:</label>
+                <input type="text" name="name" id="name" />
+            </div><br>
+            <div>
+                <label for="phone">Контакты владельца:</label>
+                <input type="tel" name="tel" id="phone"  required >*
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label>Порода питомца:</label>
+            <select name="breed">
+                <option value="Персидская кошка">Персидская кошка</option>
+                <option value="Мейн-кун">Мейн-кун</option>
+                <option value="Британская короткошерстная">Британская короткошерстная</option>
+                <option value="Бенгальская">Бенгальская</option>
+                <option value="Сиамская">Сиамская</option>
+                <option value="Гималайская">Гималайская</option>
+            </select>
+        </div><br>
+        <div >
+            <label>Чем питается?</label><br>
+            <input type="checkbox" id="dry" name="dry"/>
+            <label for="dry">сухой корм</label><br>
+            <input type="checkbox" id="wet" name="wet"/>
+            <label for="wet">влажный корм</label><br>
+            <input type="checkbox" id="natural" name="natural"/>
+            <label for="natural">натуральный корм</label>
+        </div><br>
+        <div>
+            <label>Самец или самка?</label><br>
+            Самец<input type="radio" name="male" /><br>
+            Самка<input type="radio" name="female" />
+        </div><br>
+        <div>
+            <label for="comment" >Комментарий:</label><br>
+            <textarea rows="10" cols="40" id="comment" required minlength="20" maxlength="200" name="comment"></textarea>
+        </div>
+        <div>
+            <label for="photo">Добавьте фото питомца</label><br>
+            <input type="file" id="photo" name="photo"/>
+        </div><br>
+        <button id="btn">Сохранить</button>
+    </form>
+    <script src="cat.js"></script>
+</body>
+</html>

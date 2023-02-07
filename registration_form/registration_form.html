@@ -1,0 +1,37 @@
+<!--2. Найдите форму регистрации с валидацией (задание 2 недели 18) или сверстай новую. При нажатии на кнопку “Отправить” отправляй данные формы в формате **JSON** на сайт [https://httpbin.org/post](https://httpbin.org/post) через POST запрос. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg_form.css">
+</head>
+<body>
+    <form id="form">
+        <div id="form_registartion">
+            <h1 id="title">Регистрация</h1>
+            <input id="first_name" class="form_input" type="text" name="first_name" placeholder="Имя" 
+            onfocus="focusFirstName()" onblur="blurFirstName()">
+            <input id="last_name" class="form_input" type="text" name="last_name" placeholder="Фамилия" onfocus="focusLastName()" onblur="blurLastName()">
+            <input id="inputEmail" class="form_input" type="email" name="email" placeholder="Придумайте логин" onfocus="focusEmail()" onblur="blurEmail()">
+            <input id="inputPassword" class="form_input" type="password" name="password" placeholder="Придумайте пароль" onfocus="focusPassword()" onblur="blurPassword()">
+            <input id="inputPasswordTwo" class="form_input" type="password" name="password" placeholder="Повторите пароль" onfocus="focusPasswordTwo()" onblur="blurPasswordTwo()" >
+            <input id="tel" type="tel" class="form_input" name="tel" placeholder="Номер мобильного телефона" onfocus="focusTel()" onblur="blurTel()" maxlength="15">
+            <div id="errorMessage"></div>
+            <button id="button" type="button" >Зарегистрироваться</button>    
+            <p class="click_button">Нажимая кнопку «Зарегистрироваться»:</p>
+            <div class="form_checkbox">
+                <input type="checkbox">
+                <label class="">Я принимаю условия <a href="https://yandex.ru/legal/rules">Пользовательского соглашения</a> и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных <a href="...">Политикой конфиденциальности</a>.</label>
+            </div>
+            <div class="form_checkbox">
+                <input type="checkbox">
+                <label>Я не хочу получать рекламу и другие предложения данного сервиса Яндекса</label>
+            </div>
+        </div>
+    </form>
+    <script src="reg_form.js"></script>
+</body>
+</html>

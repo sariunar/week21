@@ -1,0 +1,55 @@
+#form{
+    display: grid;
+    justify-content: center;
+}
+#form_registartion{
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 10px 30px rgb(214, 214, 214);
+    width: 25vw;
+    padding: 20px 40px;
+}
+#title{
+    font: 21px/1.5em 'Yandex-Sans-Text-Web-Regular';
+    text-align: center;
+}
+.form_input{
+    height: 35px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.form_input:focus{
+    outline: none;
+}
+#button{
+    height: 44px;
+    background-color: #fc0;
+    border: none;
+    border-radius: 8px;
+    font-family: 'YS Text',Arial,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+.click_button{
+    font: 13px/1.5em 'Yandex-Sans-Text-Web-Regular';
+    color: #999;
+}
+.form_checkbox{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 5px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.form_checkbox a{
+    color: #3d71bd;
+    text-decoration: none;
+}
+#errorMessage{
+    color: red;
+}
+.focused{
+    border-bottom: "2px solid #fc0";
+}
